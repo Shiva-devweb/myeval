@@ -1,0 +1,12 @@
+.garagesale{
+    margin: 30px;
+    padding: 20px;
+    display: block;
+    text-align: center;
+}
+.garagesale h1{
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 50px;
+    padding: 10px;
+}

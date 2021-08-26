@@ -71,18 +71,23 @@ h1{
     margin: 80px;
 }
   /* Adopter */
-.adopt{
+
+#adopt, #sponsor, #actions, #help, #location, #contact{
     border: 3px solid #8714F3;
     border-radius: 30px;
     margin: 15px;
-    padding: 10px;
+    padding: 20px;
     box-shadow:10px 10px 2px 1px rgb(182, 173, 173);
+    height: auto;
+    width: auto;
     
 }
 
 .carousel {
-    display: flex;
+    padding: 20px 50px 20px 50px;
     justify-content: center;
+    display: block;
+  
 
 }
 .carousel-inner h3{
@@ -92,13 +97,6 @@ h1{
     z-index: 20;
     color: white;
     text-shadow: 0 1px 2px rgba(0,0,0,.6);
-  }
-  .sponsor{
-    border: 3px solid #8714F3;
-    border-radius: 30px;
-    margin: 15px;
-    padding: 10px;
-    box-shadow:10px 10px 2px 1px rgb(182, 173, 173);
   }
   
 
