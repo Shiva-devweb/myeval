@@ -1,0 +1,12 @@
+*{
+    padding: 10px;
+    margin: 5px;
+  
+}
+body{
+    background: #d8d8d8;
+}
+p{
+    font-size: larger;
+    font-weight: bold;
+}

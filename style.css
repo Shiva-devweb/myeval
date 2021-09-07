@@ -7,17 +7,17 @@ body
 {
     font-family: Arial, sans-serif;
     font-size: 15px; 
+    background: #d8d8d8;;
 }
 .logo
 {
     display: inline-block;
-    float: left;
     margin-top: 10px;
     height: 120px;
 }
 header
 {
-    height: 120px;
+    height: 180px;
 }
 
 header nav
@@ -38,9 +38,10 @@ header nav ul li a
 }
 .wrapper
 {
+    
     width: 1500px;
-    margin: 0 10px;
-    padding: 0 10px;  
+    margin: 0px 10px;
+    padding: 10px 10px;  
     font-size: 20px;
 }
 
@@ -58,13 +59,14 @@ h1{
     font-weight: normal;
     text-transform: uppercase;
     text-align: center;
-    padding: 80px 0 40px 0;
+    padding: 80px 0 80px 0;
     margin-bottom: 50px;
+    margin-left: 200px;
     line-height: 200px;
     font-family: 'roboto' ;
 }
 .presentation{
-    font-size: 50px;
+    font-size: 40px;
     font-family:'pacifico' , cursive,  sans-serif;
     color: #525252 ;
     display: block;
@@ -77,7 +79,7 @@ h1{
     border-radius: 30px;
     margin: 15px;
     padding: 20px;
-    box-shadow:10px 10px 2px 1px rgb(182, 173, 173);
+    box-shadow:10px 10px 2px 1px rgb(153, 150, 150);
     height: auto;
     width: auto;
     
@@ -85,8 +87,9 @@ h1{
 
 .carousel {
     padding: 20px 50px 20px 50px;
-    justify-content: center;
-    display: block;
+    margin: auto;
+    width: 900px;
+    height: 600px;
   
 
 }
