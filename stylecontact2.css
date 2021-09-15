@@ -4,8 +4,12 @@ form{
     border-radius: 10px;
     box-shadow: 10px 10px 2px 1px #9f9f9f;
     padding: 30px;
-    margin: 20px;
     background: #d8d5d5;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%); 
 }
 h1{
     margin-bottom: 30px;
@@ -20,3 +24,9 @@ button{
 #floatingTextarea{
     height: 200px;
 }
+@media screen and (max-width: 600px) {
+    form {
+      width: 100%;
+      margin-top: 0;
+    }
+  }

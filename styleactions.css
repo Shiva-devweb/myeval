@@ -10,3 +10,9 @@
     margin-bottom: 50px;
     padding: 10px;
 }
+@media screen and (max-width: 1340px) {
+    body, img {
+      width: 100%;
+      margin-top: 0;
+    }
+  }

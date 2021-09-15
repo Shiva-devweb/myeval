@@ -1,57 +1,38 @@
-*
-{
+*{
     margin: 0;
     padding: 0;
 }
-body
-{
+body{
     font-family: Arial, sans-serif;
-    font-size: 15px; 
+    font-size: 17px; 
     background: #d8d8d8;;
 }
-.logo
-{
-    display: inline-block;
-    margin-top: 10px;
-    height: 120px;
-}
-header
-{
+header{
+ 
     height: 180px;
 }
 
-header nav
-{
-    float: right; 
-    margin-top: 50px;
+/* header nav{
+    width: 100%;
+    margin-left: auto;
+    margin-top: 30px;
 }
-header nav ul li
-{
-    display: inline-block;
-}
-header nav ul li a
-{
+/* header nav a{
     text-transform: uppercase;
     font-weight: bold;
     margin-right: 20px;
-    color: rgb(135, 20, 243);
-}
-.wrapper
-{
-    
-    width: 1500px;
-    margin: 0px 10px;
-    padding: 10px 10px;  
+    color: rgb(111, 74, 146);
+} */ */
+.wrapper{
+    width: 100%;
+    margin: 10px 10px;
     font-size: 20px;
 }
 
 /*Main image*/
-#main-image
-{
+#main-image{
     height: 580px;
-    background: url(images/toune6.jpg) center;
-    
-    
+    background: url(images/toune6.jpg) center; 
 }
 h1{
     color: rgb(255, 255, 255);
@@ -60,11 +41,13 @@ h1{
     text-transform: uppercase;
     text-align: center;
     padding: 80px 0 80px 0;
-    margin-bottom: 50px;
-    margin-left: 200px;
     line-height: 200px;
-    font-family: 'roboto' ;
+    font-family: 'roboto', 'Arial', 'Sans-Serif';
 }
+h2{
+    padding-bottom: 20px;
+}
+
 .presentation{
     font-size: 40px;
     font-family:'pacifico' , cursive,  sans-serif;
@@ -77,12 +60,19 @@ h1{
 #adopt, #sponsor, #actions, #help, #location, #contact{
     border: 3px solid #8714F3;
     border-radius: 30px;
-    margin: 15px;
-    padding: 20px;
+    margin: 20px;
+    margin-bottom: 50px;
+    padding: 40px;
     box-shadow:10px 10px 2px 1px rgb(153, 150, 150);
-    height: auto;
-    width: auto;
-    
+    height: 80%;
+    width: auto; 
+}
+
+#main-image, #actions,#location, #contact, #adopt{
+    margin-bottom: 50px;
+}
+#adopt .row{
+    max-height: max-content;
 }
 
 .carousel {
@@ -90,16 +80,141 @@ h1{
     margin: auto;
     width: 900px;
     height: 600px;
-  
+    display: flex;
 
 }
 .carousel-inner h3{
-    position: absolute;
-    bottom: 10%;
+    position: relative;
+    padding-top: 15px;
+    bottom: 20%;
     left: 45%;
     z-index: 20;
-    color: white;
+    color: rgb(85, 85, 85);
     text-shadow: 0 1px 2px rgba(0,0,0,.6);
   }
-  
+.carousel-indicators, .carousel-control-next, .carousel-control-prev{
+      margin:0 20px 50px 20px;
+  }
+.carousel-indicators{
+      margin-bottom: 130px;
+  }
 
+  
+.map{
+    position: relative;
+}
+.map iframe{
+    margin-left: 500px;
+    margin-top: -150px; 
+}
+
+
+/*Media queries*/
+/*xs*/
+@media (max-width: 576px) {
+   
+    .map iframe{
+        margin-top: 20px; 
+        margin-left: 0px;
+        max-width: 100%;
+        max-height: 200px;
+        min-height: 100px;
+    }
+    .wrapper h1 {
+        max-height: 100px; 
+        padding: 0; 
+        font-size: 40px; 
+        line-height: 150px; 
+    }
+    .carousel {
+        padding: 20px 20px 20px 20px;
+        margin: auto;
+        width: auto;
+        height: 230px;
+        display: flex;
+    }
+    .carousel-inner h3{
+        left: 20%;
+        font-size: smaller;
+      }
+    #sponsor, #contact, #help{
+        text-overflow: ellipsis;
+        overflow: auto;
+    }
+    .carousel-indicators, .carousel-control-next, .carousel-control-prev{
+        
+        height: 1em;
+        width: 1em;
+        margin-top: 60px;   
+    } 
+    #adopt{
+        max-height: 400px;
+    }
+    .row{
+        display: block;
+    }
+}
+  
+  /*sm*/
+@media (min-width: 577px) and (max-width: 768px) {
+    .map iframe{ 
+        margin-left:230px;
+        max-width: 200px;
+        max-height: 200px;
+        min-width: 50px;
+        min-height: 20px;
+        }
+    .wrapper h1 {
+        max-height: 500px; 
+        padding: 0;
+        }
+    .carousel-indicators, .carousel-control-next, .carousel-control-prev{
+        margin: 0 35px 410px 35px;
+        }  
+    #adopt{
+        max-height: 500px;
+        }  
+    .row{
+        display: block;
+        }    
+}
+  
+  /*md*/
+@media (min-width: 769px) and (max-width: 992px) {
+           
+    .carousel-indicators, .carousel-control-next, .carousel-control-prev{
+        margin: 0 30px 210px 30px;
+        } 
+    .map iframe{ 
+        margin-left:300px;
+        max-width: 500px;
+        }
+    #adopt{
+        height: 700px;
+        }
+    .row{
+        display: block;
+        }  
+         
+}
+
+     /*lg*/
+@media (min-width: 993px) and (max-width: 1200px) {
+     
+    #adopt{
+        height: 720px;
+        } 
+    .map iframe{ 
+            margin-left:300px;
+            width: 500px;
+            }
+}
+     /*xl*/
+@media (min-width: 1200px) {
+    .map iframe{ 
+        margin-left:300px;
+        width: 800px;
+        max-height: 300px;
+        }
+
+    }
