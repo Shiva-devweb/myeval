@@ -11,18 +11,6 @@ header{
  
     height: 180px;
 }
-
-/* header nav{
-    width: 100%;
-    margin-left: auto;
-    margin-top: 30px;
-}
-/* header nav a{
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-right: 20px;
-    color: rgb(111, 74, 146);
-} */ */
 .wrapper{
     width: 100%;
     margin: 10px 10px;
